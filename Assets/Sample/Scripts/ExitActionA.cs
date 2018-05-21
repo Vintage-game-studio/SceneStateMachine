@@ -1,11 +1,9 @@
 ﻿using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using UnityEngine.Events;
 
-public class KeyEvents : MonoBehaviour
-{
-	public UnityEvent UnityEventA;
+public class ExitActionA : MonoBehaviour {
+
 	// Use this for initialization
 	void Start () {
 		
@@ -13,11 +11,11 @@ public class KeyEvents : MonoBehaviour
 	
 	// Update is called once per frame
 	void Update () {
-
-		if (Input.GetKeyUp(KeyCode.Space))
-		{
-			UnityEventA.Invoke();
-		}
 		
+	}
+
+	public void ExitState()
+	{
+		Debug.Log("Exit State A");
 	}
 }
